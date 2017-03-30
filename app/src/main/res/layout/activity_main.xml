@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_gray">
+    <ImageButton
+        android:id="@+id/bDistanceActivity"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:background="@drawable/distance_selector"
+        android:src="@drawable/distance"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="@dimen/button_margin"
+        android:layout_marginLeft="@dimen/button_margin"
+        android:layout_marginRight="@dimen/button_margin" />
+    <ImageButton
+        android:id="@+id/bWeightActivity"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:background="@drawable/weight_selector"
+        android:src="@drawable/weight"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="@dimen/button_margin"
+        android:layout_marginLeft="@dimen/button_margin"
+        android:layout_marginRight="@dimen/button_margin" />
+    <ImageButton
+        android:id="@+id/bTimeActivity"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:background="@drawable/time_selector"
+        android:src="@drawable/time"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="@dimen/button_margin"
+        android:layout_marginLeft="@dimen/button_margin"
+        android:layout_marginRight="@dimen/button_margin"/>
+    <ImageButton
+        android:id="@+id/bShoesActivity"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:background="@drawable/shoes_selector"
+        android:src="@drawable/shoes"
+        android:scaleType="fitCenter"
+        android:layout_margin="@dimen/button_margin"/>
+</LinearLayout>

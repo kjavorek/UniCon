@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">UniCon</string>
+    <string name="bStartSecondActivityText">Next</string>
+    <string name="convert">CONVERT</string>
+    <string-array name="spinnerDistance">
+        <item>Miles</item>
+        <item>Kilometers</item>
+        <item>Yards</item>
+    </string-array>
+    <string-array name="spinnerWeight">
+        <item>Kilograms</item>
+        <item>Pounds</item>
+        <item>Decagrams</item>
+    </string-array>
+    <string-array name="spinnerTime">
+        <item>Weeks</item>
+        <item>Days</item>
+        <item>Minutes</item>
+    </string-array>
+    <string-array name="spinnerShoes">
+        <item>Europe</item>
+        <item>United Kingdom</item>
+        <item>USA</item>
+    </string-array>
+</resources>
