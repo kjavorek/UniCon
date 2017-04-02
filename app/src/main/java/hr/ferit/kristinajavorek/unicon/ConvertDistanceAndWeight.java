@@ -14,13 +14,19 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class ConvertDistanceAndWeight extends AppCompatActivity implements View.OnClickListener{
+
+    public static final String KEY_FROM = "Convert from";
+    public static final String KEY_TO = "Convert to";
+    public static final String KEY_FROM_NUM = "From value";
+    public static final String KEY_TO_NUM = "To value";
+
     TextView tvConvert;
     Button bConvert;
     EditText etConvert;
     Spinner spinner1, spinner2;
     String[] spinner;
     ArrayAdapter<String> adapter;
-    String inputData, selected1, selected2, result;
+    String inputData, num, selected1, selected2, result;
     Double numberForConvert;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,20 +54,28 @@ public class ConvertDistanceAndWeight extends AppCompatActivity implements View.
             tvConvert.setText(inputData +" CONVERTER");
             spinner = res.getStringArray(R.array.spinnerWeight);
         }
-        adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item, spinner);
+        adapter = new ArrayAdapter<String>(this, R.layout.spinner_item, spinner);
+        adapter.setDropDownViewResource(R.layout.spinner_dropdown_item);
         spinner1.setAdapter(adapter);
         spinner2.setAdapter(adapter);
     }
     @Override
     public void onClick(View view) {
         if(etConvert.getText().toString().matches("")){
-            Toast.makeText(this, "You did not enter a value", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Please enter a value", Toast.LENGTH_SHORT).show();
         }else {
             selected1 = spinner1.getSelectedItem().toString();
             selected2 = spinner2.getSelectedItem().toString();
             numberForConvert = Double.parseDouble(etConvert.getText().toString());
+            num = numberForConvert.toString();
             convert();
-            Toast.makeText(this, result, Toast.LENGTH_SHORT).show();
+            Intent resultIntent = new Intent();
+            resultIntent.setClass(getApplicationContext(), ShowResult.class);
+            resultIntent.putExtra(KEY_FROM, selected1);
+            resultIntent.putExtra(KEY_TO, selected2);
+            resultIntent.putExtra(KEY_FROM_NUM, num);
+            resultIntent.putExtra(KEY_TO_NUM, result);
+            this.startActivity(resultIntent);
         }
     }
     public void convert(){

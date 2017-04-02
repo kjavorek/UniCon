@@ -2,6 +2,7 @@
     <string name="app_name">UniCon</string>
     <string name="bStartSecondActivityText">Next</string>
     <string name="convert">CONVERT</string>
+    <string name="equal">=</string>
     <string-array name="spinnerDistance">
         <item>Miles</item>
         <item>Kilometers</item>

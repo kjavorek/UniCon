@@ -12,4 +12,11 @@
     <color name="light_pink">#c71585</color>
     <color name="dark_blue">#2f6699</color>
     <color name="light_blue">#449def</color>
+    <color name="light_matPink">#e1bea6</color>
+    <color name="dark_matPink">#8b4f5f</color>
+    <color name="dark_purple">#400c60</color>
+    <color name="light_purple">#5d0888</color>
+    <color name="white">#fff</color>
+    <color name="light_gray">#999</color>
+    <color name="gray">#ccc</color>
 </resources>

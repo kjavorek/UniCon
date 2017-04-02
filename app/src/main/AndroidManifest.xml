@@ -20,7 +20,10 @@
             android:theme="@style/GoldTheme" />
         <activity
             android:name=".ConvertDistanceAndWeight"
-            android:theme="@style/GoldTheme" />
+            android:theme="@style/PurpleTheme" />
+        <activity
+            android:name=".ShowResult"
+            android:theme="@style/GoldTheme"></activity>
     </application>
 
 </manifest>
