@@ -83,34 +83,34 @@ public class ConvertDistanceAndWeight extends AppCompatActivity implements View.
             if (selected1 == selected2) {
                 result = numberForConvert.toString();
             } else if (selected1.equals("Miles") && selected2.equals("Kilometers")) {
-                result = (numberForConvert*=1.609344).toString();
+                result=String.format("%.2f", (numberForConvert*=1.609344));
             } else if (selected1.equals("Miles") && selected2.equals("Yards")) {
-                result = (numberForConvert*=1760).toString();
+                result=String.format("%.2f", numberForConvert*=1760);
             } else if (selected1.equals("Kilometers") && selected2.equals("Miles")) {
-                result = (numberForConvert*=0.621371192).toString();
+                result=String.format("%.2f", (numberForConvert*=0.621371192));
             } else if (selected1.equals("Kilometers") && selected2.equals("Yards")) {
-                result = (numberForConvert*=1093.6133).toString();
+                result=String.format("%.2f", (numberForConvert*=1093.6133));
             } else if (selected1.equals("Yards") && selected2.equals("Miles")) {
-                result = (numberForConvert*=0.000568181818).toString();
+                result=String.format("%.2f", (numberForConvert*=0.000568181818));
             } else if (selected1.equals("Yards") && selected2.equals("Kilometers")) {
-                result = (numberForConvert*=0.0009144).toString();
+                result=String.format("%.2f", (numberForConvert*=0.0009144));
             }
         }
         if(inputData.equals("WEIGHT")) {
             if (selected1 == selected2) {
                 result = numberForConvert.toString();
             } else if (selected1.equals("Kilograms") && selected2.equals("Pounds")) {
-                result = (numberForConvert*=2.20462262).toString();
+                result=String.format("%.2f", (numberForConvert*=2.20462262));
             } else if (selected1.equals("Kilograms") && selected2.equals("Decagrams")) {
-                result = (numberForConvert*=100).toString();
+                result=String.format("%.2f", (numberForConvert*=100));
             } else if (selected1.equals("Pounds") && selected2.equals("Kilograms")) {
-                result = (numberForConvert*=0.45359237).toString();
+                result=String.format("%.2f", (numberForConvert*=0.45359237));
             } else if (selected1.equals("Pounds") && selected2.equals("Decagrams")) {
-                result = (numberForConvert*=45.359237).toString();
+                result=String.format("%.2f", (numberForConvert*=45.359237));
             } else if (selected1.equals("Decagrams") && selected2.equals("Pounds")) {
-                result = (numberForConvert*=0.0220462262).toString();
+                result=String.format("%.2f", (numberForConvert*=0.0220462262));
             } else if (selected1.equals("Decagrams") && selected2.equals("Kilograms")) {
-                result = (numberForConvert*=0.01).toString();
+                result=String.format("%.2f", (numberForConvert*=0.01));
             }
         }
     }

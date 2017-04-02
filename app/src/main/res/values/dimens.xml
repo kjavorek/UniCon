@@ -4,7 +4,7 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="button_height">130dp</dimen>
     <dimen name="button_margin">8dp</dimen>
-    <dimen name="text_size">35dp</dimen>
+    <dimen name="text_size">30dp</dimen>
     <dimen name="text_margin">15dp</dimen>
     <dimen name="l_r_padding">16dp</dimen>
     <dimen name="spinner">20sp</dimen>

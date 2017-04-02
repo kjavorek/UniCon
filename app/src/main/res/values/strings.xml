@@ -20,7 +20,9 @@
     </string-array>
     <string-array name="spinnerShoes">
         <item>Europe</item>
-        <item>United Kingdom</item>
-        <item>USA</item>
+        <item>UK men</item>
+        <item>UK women</item>
+        <item>US men</item>
+        <item>US women</item>
     </string-array>
 </resources>

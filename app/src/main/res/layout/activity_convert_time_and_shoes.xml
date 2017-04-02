@@ -2,17 +2,50 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <EditText
-        android:id="@+id/etMailInput"
+    android:layout_height="match_parent"
+    android:background="@color/dark_purple"
+    android:paddingLeft="@dimen/l_r_padding"
+    android:paddingRight="@dimen/l_r_padding">
+    <TextView
+        android:id="@+id/tvConvert"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textEmailAddress"
-        android:hint="Hint"/>
-    <Button
-        android:id="@+id/bProcess"
-        android:layout_width="wrap_content"
+        android:gravity="top|center"
+        android:textSize="@dimen/text_size"
+        android:layout_marginTop="@dimen/text_margin"
+        android:textColor="@color/white"
+        android:layout_marginBottom="@dimen/button_space"
+        android:textStyle="bold"/>
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/light_purple"
+        android:spinnerMode="dropdown"
+        android:layout_marginBottom="@dimen/button_space"/>
+    <EditText
+        android:id="@+id/etConvert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Enter value"
+        android:textColorHint="@color/light_gray"
+        android:textColor="@color/white"
+        android:layout_marginBottom="@dimen/button_space"/>
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_purple"
+        android:layout_marginBottom="@dimen/button_space"/>
+    <Button
+        android:id="@+id/bConvert"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_size"
         android:layout_gravity="center"
-        android:text="Text"/>
+        android:text="@string/convert"
+        android:background="@drawable/button_selector"
+        android:textColor="@color/white"
+        android:textSize="@dimen/button_text_size"
+        android:layout_marginTop="@dimen/button_top_margin" />
 </LinearLayout>

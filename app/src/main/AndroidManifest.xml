@@ -17,13 +17,13 @@
         </activity>
         <activity
             android:name=".ConvertTimeAndShoes"
-            android:theme="@style/GoldTheme" />
+            android:theme="@style/PurpleTheme" />
         <activity
             android:name=".ConvertDistanceAndWeight"
             android:theme="@style/PurpleTheme" />
         <activity
             android:name=".ShowResult"
-            android:theme="@style/GoldTheme"></activity>
+            android:theme="@style/PurpleTheme"></activity>
     </application>
 
 </manifest>
