@@ -11,10 +11,10 @@ je korisnik unio podatke prikupljaju se vrijednosti i izračunava se rezultat. P
 koje se preračunavaju šalju se eksplicitnim intentom u activity za prikaz rezultata uz  pomoć extra podataka. U activity-u 
 za prikaz podataka prikazuju se mjerne jedinice, početna veličina i rezultat. Pomoću ScrollView-a omogućen je vertikalni 
 scroll ekrana prilikom okretanja mobitela horizontalno.
-
-Literatura i izvori:
-Predlošci s laboratorijskih vježbi
-http://stackoverflow.com/questions/26070827/how-to-set-style-for-a-button-in-android (Button style)
-https://www.mkyong.com/android/android-spinner-drop-down-list-example/ (Spinner)
-http://stackoverflow.com/questions/30160784/how-to-compare-two-spinner-items (Compare spinners)
-http://www.broculos.net/2013/09/how-to-change-spinner-text-size-color.html#.WN5Xd_nyjIU (Spinner style)
+  
+Literatura i izvori:  
+Predlošci s laboratorijskih vježbi  
+http://stackoverflow.com/questions/26070827/how-to-set-style-for-a-button-in-android (Button style)  
+https://www.mkyong.com/android/android-spinner-drop-down-list-example/ (Spinner)  
+http://stackoverflow.com/questions/30160784/how-to-compare-two-spinner-items (Compare spinners)  
+http://www.broculos.net/2013/09/how-to-change-spinner-text-size-color.html#.WN5Xd_nyjIU (Spinner style)  
